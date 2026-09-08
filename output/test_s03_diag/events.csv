@@ -1,0 +1,5 @@
+scenario_id,event_id,track_id,event_type,object_type,observed_at_seconds,confidence,evidence_image
+S03_DENSE_CROSSING,evt-0001,2,A_TO_B,package,14.000,0.96,evidence/evt_0001_bfed3906.jpg
+S03_DENSE_CROSSING,evt-0002,3,B_TO_A,package,14.520,0.96,evidence/evt_0002_4c99c10c.jpg
+S03_DENSE_CROSSING,evt-0003,4,B_TO_A,package,15.400,0.96,evidence/evt_0003_030b23e5.jpg
+S03_DENSE_CROSSING,evt-0004,5,A_TO_B,package,19.040,0.96,evidence/evt_0004_aaebdba7.jpg

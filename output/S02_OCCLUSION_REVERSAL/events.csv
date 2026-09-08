@@ -1,0 +1,4 @@
+scenario_id,event_id,track_id,event_type,object_type,observed_at_seconds,confidence,evidence_image
+S02_OCCLUSION_REVERSAL,evt-0001,1,A_TO_B,package,12.440,0.96,evidence/evt_0001_875c71b5.jpg
+S02_OCCLUSION_REVERSAL,evt-0002,2,B_TO_A,package,18.440,0.96,evidence/evt_0002_9e2b74da.jpg
+S02_OCCLUSION_REVERSAL,evt-0003,3,A_TO_B,package,20.200,0.96,evidence/evt_0003_e808bcf3.jpg

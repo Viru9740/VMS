@@ -11,7 +11,7 @@ __pycache__/
 htmlcov/
 
 # Pipeline runtime outputs
-output/
+# output/
 
 # Pretrained model weights (downloaded automatically on first run)
 *.pt

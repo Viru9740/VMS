@@ -1,0 +1,7 @@
+{
+  "queue_zone": "QUEUE",
+  "peak_occupancy": 3,
+  "average_dwell_seconds": 11.77,
+  "total_objects_queued": 3,
+  "dwell_threshold_violations": 3
+}

@@ -1,0 +1,4 @@
+scenario_id,event_id,track_id,event_type,object_type,observed_at_seconds,confidence,evidence_image
+S04_DWELL_QUEUE,evt-0004,1,A_TO_B,package,18.160,0.96,evidence/evt_0004_0a4e8945.jpg
+S04_DWELL_QUEUE,evt-0005,2,A_TO_B,package,21.280,0.96,evidence/evt_0005_2e12c6da.jpg
+S04_DWELL_QUEUE,evt-0006,3,A_TO_B,package,24.360,0.96,evidence/evt_0006_0efb7bdb.jpg
