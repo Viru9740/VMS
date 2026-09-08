@@ -1,0 +1,21 @@
+# Python & Virtual Environments
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Pipeline runtime outputs
+output/
+
+# Pretrained model weights (downloaded automatically on first run)
+*.pt
+
+# OS artifacts
+.DS_Store
+Thumbs.db

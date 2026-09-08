@@ -1,0 +1,10 @@
+{
+  "camera_id": "challenge_cam_01",
+  "min_area": 900,
+  "max_match_distance": 80,
+  "max_missed_frames": 12,
+  "zones": {
+    "A": [[40, 80], [300, 80], [300, 420], [40, 420]],
+    "B": [[340, 80], [620, 80], [620, 420], [340, 420]]
+  }
+}

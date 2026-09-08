@@ -1,0 +1,4 @@
+scenario_id,event_id,track_id,event_type,object_type,observed_at_seconds,confidence,evidence_image
+S01_BASIC_GOODS,evt-0001,101,A_TO_B,package,10.440,0.94,evidence/evt-0001.jpg
+S01_BASIC_GOODS,evt-0002,205,A_TO_B,package,13.120,0.91,evidence/evt-0002.jpg
+S01_BASIC_GOODS,evt-0003,309,B_TO_A,package,18.520,0.89,evidence/evt-0003.jpg

@@ -1,0 +1,28 @@
+{
+  "scenario_id": "S02_OCCLUSION_REVERSAL",
+  "title": "Occlusion, reversal and stop-resume",
+  "width": 1280,
+  "height": 720,
+  "fps": 25,
+  "duration_seconds": 30,
+  "zones": {
+    "A": [70, 110, 420, 630],
+    "B": [860, 110, 1210, 630]
+  },
+  "occluders": [[560, 160, 730, 560]],
+  "objects": [
+    {"id": 11, "class": "package", "start": [130, 220], "end": [1070, 220], "start_frame": 30, "end_frame": 390, "size": [76, 58]},
+    {"id": 12, "class": "package", "waypoints": [[1080, 400, 60], [560, 400, 220], [800, 400, 320], [150, 400, 560]], "size": [74, 56]},
+    {"id": 13, "class": "package", "waypoints": [[150, 520, 100], [530, 520, 260], [530, 520, 360], [1080, 520, 600]], "size": [86, 62]}
+  ],
+  "expected_events": [
+    {"object_id": 11, "event_type": "A_TO_B"},
+    {"object_id": 12, "event_type": "B_TO_A"},
+    {"object_id": 13, "event_type": "A_TO_B"}
+  ],
+  "challenge_notes": [
+    "Object 11 passes behind an occluder.",
+    "Object 12 reverses before eventually completing B-to-A.",
+    "Object 13 pauses before completing A-to-B."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "scenario_id": "S04_DWELL_QUEUE",
+  "title": "Dwell and queue behavior",
+  "width": 1280,
+  "height": 720,
+  "fps": 25,
+  "duration_seconds": 32,
+  "zones": {
+    "A": [70, 100, 400, 630],
+    "QUEUE": [500, 180, 820, 560],
+    "B": [900, 100, 1220, 630]
+  },
+  "objects": [
+    {"id": 31, "class": "package", "waypoints": [[130, 230, 20], [600, 230, 190], [600, 230, 340], [1080, 230, 520]], "size": [74, 56]},
+    {"id": 32, "class": "package", "waypoints": [[140, 360, 80], [650, 360, 240], [650, 360, 420], [1080, 360, 610]], "size": [78, 60]},
+    {"id": 33, "class": "package", "waypoints": [[150, 490, 150], [690, 490, 310], [690, 490, 500], [1060, 490, 690]], "size": [70, 54]}
+  ],
+  "expected_events": [
+    {"object_id": 31, "event_type": "A_TO_B", "minimum_queue_dwell_seconds": 5.0},
+    {"object_id": 32, "event_type": "A_TO_B", "minimum_queue_dwell_seconds": 7.0},
+    {"object_id": 33, "event_type": "A_TO_B", "minimum_queue_dwell_seconds": 7.0}
+  ],
+  "challenge_notes": [
+    "All objects pass through a central queue region.",
+    "Candidates can earn bonus value by reporting dwell time and queue occupancy over time."
+  ]
+}

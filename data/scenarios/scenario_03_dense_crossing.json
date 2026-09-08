@@ -1,0 +1,31 @@
+{
+  "scenario_id": "S03_DENSE_CROSSING",
+  "title": "Dense simultaneous crossings",
+  "width": 1280,
+  "height": 720,
+  "fps": 25,
+  "duration_seconds": 28,
+  "zones": {
+    "A": [60, 90, 400, 650],
+    "B": [880, 90, 1220, 650]
+  },
+  "objects": [
+    {"id": 21, "class": "package", "start": [120, 180], "end": [1100, 500], "start_frame": 25, "end_frame": 420, "size": [68, 54]},
+    {"id": 22, "class": "package", "start": [130, 510], "end": [1080, 190], "start_frame": 45, "end_frame": 430, "size": [72, 58]},
+    {"id": 23, "class": "package", "start": [1100, 260], "end": [140, 430], "start_frame": 70, "end_frame": 470, "size": [78, 60]},
+    {"id": 24, "class": "package", "start": [1080, 470], "end": [120, 250], "start_frame": 100, "end_frame": 500, "size": [70, 56]},
+    {"id": 25, "class": "package", "start": [150, 340], "end": [1060, 340], "start_frame": 130, "end_frame": 560, "size": [84, 64]}
+  ],
+  "expected_events": [
+    {"object_id": 21, "event_type": "A_TO_B"},
+    {"object_id": 22, "event_type": "A_TO_B"},
+    {"object_id": 23, "event_type": "B_TO_A"},
+    {"object_id": 24, "event_type": "B_TO_A"},
+    {"object_id": 25, "event_type": "A_TO_B"}
+  ],
+  "challenge_notes": [
+    "Several trajectories cross near the center.",
+    "A robust tracker should minimize ID switches.",
+    "Counting must remain event-based and deduplicated."
+  ]
+}

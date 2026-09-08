@@ -1,0 +1,22 @@
+{
+  "scenario_id": "S01_BASIC_GOODS",
+  "title": "Basic goods A-to-B flow",
+  "width": 1280,
+  "height": 720,
+  "fps": 25,
+  "duration_seconds": 24,
+  "zones": {
+    "A": [80, 120, 430, 620],
+    "B": [850, 120, 1200, 620]
+  },
+  "objects": [
+    {"id": 1, "class": "package", "start": [130, 230], "end": [1050, 230], "start_frame": 20, "end_frame": 260, "size": [72, 56]},
+    {"id": 2, "class": "package", "start": [150, 430], "end": [1080, 430], "start_frame": 70, "end_frame": 330, "size": [82, 60]},
+    {"id": 3, "class": "package", "start": [1080, 330], "end": [150, 330], "start_frame": 180, "end_frame": 460, "size": [68, 54]}
+  ],
+  "expected_events": [
+    {"object_id": 1, "event_type": "A_TO_B"},
+    {"object_id": 2, "event_type": "A_TO_B"},
+    {"object_id": 3, "event_type": "B_TO_A"}
+  ]
+}
